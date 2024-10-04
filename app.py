@@ -1,12 +1,12 @@
 import os
 import streamlit as st
 import time
-from langchain import OpenAI
+from langchain.llms import OpenAI  # Updated import for OpenAI
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import UnstructuredURLLoader
-from langchain.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
+from langchain.embeddings.openai import OpenAIEmbeddings  # Updated import for embeddings
+from langchain.vectorstores import FAISS  # Updated import for FAISS
 from dotenv import load_dotenv
 
 # Load environment variables (especially OpenAI API key)
