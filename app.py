@@ -15,8 +15,9 @@ from streamlit import header
 # Load environment variables (especially OpenAI API key)
 ##load_dotenv()
 
-# Get the API key from Streamlit Secrets
+st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
 
+# Get the API key from Streamlit Secrets
 api_key = st.secrets["OPENAI_API_KEY"]
 
 # Check if the API key is retrieved correctly
@@ -26,7 +27,7 @@ else:
     st.write(f"API Key Retrieved: {api_key}")  # Debugging line to ensure key is fetched
 
 
-st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
+
 
 # Page title and tagline
 st.title("AI-Powered News Analysis Engine 📰")
