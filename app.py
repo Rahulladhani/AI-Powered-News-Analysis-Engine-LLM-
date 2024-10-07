@@ -8,17 +8,16 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import UnstructuredURLLoader
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-
+from langchain.llms import OpenAI
+from streamlit import header
 
 #from dotenv import load_dotenv
 # Load environment variables (especially OpenAI API key)
 #load_dotenv()
+headers = {
+    "authorization": st.secrets["OPENAI_API_KEY"]
+}
 
-# form streamlit
-import os
-from langchain.llms import OpenAI
-# Get the API key from Streamlit Secrets
-api_key = st.secrets["OPENAI_API_KEY"]
 
 if not api_key:
     st.error("OpenAI API key is missing. Please check your Streamlit secrets.")
