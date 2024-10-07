@@ -8,3 +8,5 @@ libmagic==1.0
 python-magic==0.4.27
 python-magic-bin==0.4.14
 openai==0.28.0
+pydantic==1.10.2
+git add requirment.txt
