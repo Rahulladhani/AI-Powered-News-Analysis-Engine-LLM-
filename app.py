@@ -11,12 +11,16 @@ from langchain.vectorstores import FAISS
 from langchain.llms import OpenAI
 from streamlit import header
 
-#from dotenv import load_dotenv
+##from dotenv import load_dotenv
 # Load environment variables (especially OpenAI API key)
-#load_dotenv()
-headers = {
-    "authorization": st.secrets["OPENAI_API_KEY"]
-}
+##load_dotenv()
+
+# Get the API key from Streamlit Secrets
+api_key = st.secrets["OPENAI_API_KEY"]
+
+if not api_key:
+    st.error("OpenAI API key is missing. Please check your Streamlit secrets.")
+
 
 st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
 
