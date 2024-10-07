@@ -18,10 +18,6 @@ headers = {
     "authorization": st.secrets["OPENAI_API_KEY"]
 }
 
-
-if not api_key:
-    st.error("OpenAI API key is missing. Please check your Streamlit secrets.")
-# Set page configuration with a title and an icon
 st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
 
 # Page title and tagline
