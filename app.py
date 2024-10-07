@@ -10,10 +10,18 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 # Load environment variables (especially OpenAI API key)
-load_dotenv()
+#load_dotenv()
 
+# form streamlit
+import os
+from langchain.llms import OpenAI
+# Get the API key from Streamlit Secrets
+api_key = st.secrets["OPENAI_API_KEY"]
+
+if not api_key:
+    st.error("OpenAI API key is missing. Please check your Streamlit secrets.")
 # Set page configuration with a title and an icon
 st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
 
