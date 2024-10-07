@@ -16,10 +16,14 @@ from streamlit import header
 ##load_dotenv()
 
 # Get the API key from Streamlit Secrets
+
 api_key = st.secrets["OPENAI_API_KEY"]
 
+# Check if the API key is retrieved correctly
 if not api_key:
     st.error("OpenAI API key is missing. Please check your Streamlit secrets.")
+else:
+    st.write(f"API Key Retrieved: {api_key}")  # Debugging line to ensure key is fetched
 
 
 st.set_page_config(page_title="AI-Powered News Analysis Engine", page_icon=":newspaper:")
