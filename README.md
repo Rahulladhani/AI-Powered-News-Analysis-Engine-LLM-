@@ -37,7 +37,9 @@ The system will:
 •Example URLs used during testing:
 
 MoneyControl: Tata Motors & Mahindra certificates
+
 Renish Ladhani: Dolomites Budget Guide
+
 Nature: Research on AI in finance
 
 ### Project Structure
