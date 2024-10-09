@@ -36,11 +36,11 @@ The system will:
 
 •Example URLs used during testing:
 
-MoneyControl: Tata Motors & Mahindra certificates
+https://www.moneycontrol.com/news/business/tata-motors-mahindra-gain-certificates-for-production-linked-payouts-11281691.html
 
-Renish Ladhani: Dolomites Budget Guide
+https://renishladhani.com/dolomites-budget-travel-guide/
 
-Nature: Research on AI in finance
+https://www.nature.com/articles/d41586-021-02690-5
 
 ### Project Structure
 •main.py: The main Streamlit application script for running the app.
