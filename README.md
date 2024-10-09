@@ -21,32 +21,32 @@ streamlit run main.py
 
 2.The web app will open in your browser.
 
-•On the sidebar, you can input up to three news article URLs related to the stock market, financial domain, or any relevant topics.
+• On the sidebar, you can input up to three news article URLs related to the stock market, financial domain, or any relevant topics.
 
-•Click "Process URLs" to start analyzing the content from the provided articles.
+• Click "Process URLs" to start analyzing the content from the provided articles.
 The system will:
 
-•Perform text processing and splitting for each article.
+• Perform text processing and splitting for each article.
 
-•Generate embeddings using an AI model and efficiently index them using FAISS.
+• Generate embeddings using an AI model and efficiently index them using FAISS.
 
-•The FAISS index will be stored locally in a pickle file for faster future retrieval.
+• The FAISS index will be stored locally in a pickle file for faster future retrieval.
 
-•You can now ask questions about the content of the articles directly and receive AI-generated insights in seconds.
+• You can now ask questions about the content of the articles directly and receive AI-generated insights in seconds.
 
-•Example URLs used during testing:
+• Example URLs used during testing:
 
-https://www.moneycontrol.com/news/business/tata-motors-mahindra-gain-certificates-for-production-linked-payouts-11281691.html
+⸰ https://www.moneycontrol.com/news/business/tata-motors-mahindra-gain-certificates-for-production-linked-payouts-11281691.html
 
-https://renishladhani.com/dolomites-budget-travel-guide/
+⸰ https://renishladhani.com/dolomites-budget-travel-guide/
 
-https://www.nature.com/articles/d41586-021-02690-5
+⸰ https://www.nature.com/articles/d41586-021-02690-5
 
 ### Project Structure
-•main.py: The main Streamlit application script for running the app.
+• main.py: The main Streamlit application script for running the app.
 
-•requirements.txt: A list of required Python packages, including libraries for text processing and FAISS.
+• requirements.txt: A list of required Python packages, including libraries for text processing and FAISS.
 
-•faiss_store.pkl: A pickle file that stores the FAISS index for embedding vectors.
+• faiss_store.pkl: A pickle file that stores the FAISS index for embedding vectors.
 
-•.env: A configuration file for securely storing your OpenAI API key.
+• .env: A configuration file for securely storing your OpenAI API key.
