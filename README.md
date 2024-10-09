@@ -14,12 +14,10 @@ This tool is designed to unlock AI-powered insights from your news articles in j
 
 • User-Friendly Interface: With a straightforward design, interact directly with the tool and receive actionable insights.
 
-Usage/Examples
+### Usage/Examples
 Run the Streamlit app by executing:
-
-arduino
-Copy code
 streamlit run main.py
+
 The web app will open in your browser.
 
 On the sidebar, you can input up to three news article URLs related to the stock market, financial domain, or any relevant topics.
