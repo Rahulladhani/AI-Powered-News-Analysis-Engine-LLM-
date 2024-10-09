@@ -25,6 +25,7 @@ streamlit run main.py
 
 •Click "Process URLs" to start analyzing the content from the provided articles.
 The system will:
+
 •Perform text processing and splitting for each article.
 
 •Generate embeddings using an AI model and efficiently index them using FAISS.
